@@ -20,11 +20,14 @@ public class Snack5 {
 		
 		int maxNumber = 0;
 		int minNumber = 50;
+		int total = 0;
+		int avgNumber = 0;
 		
 		for (int x = 0; x < array.length; x++) {
 			
 			int numbers = array[x];
 			
+			total += numbers;
 			
 			if (numbers > maxNumber) {
 				
@@ -37,7 +40,11 @@ public class Snack5 {
 			}
 		}
 		
-		System.out.println(maxNumber);
-		System.out.println(minNumber);
+		avgNumber = total / array.length;
+		
+		System.out.println("total number is " + total);
+		System.out.println("the average is " + avgNumber);
+		System.out.println("max number is " + maxNumber);
+		System.out.println("min number is " + minNumber);
 	}
 }
