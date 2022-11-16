@@ -1,7 +1,6 @@
 package org.generation.italy;
 
 import java.util.Random;
-import java.util.jar.Attributes.Name;
 
 public class Snack2 {
 	
