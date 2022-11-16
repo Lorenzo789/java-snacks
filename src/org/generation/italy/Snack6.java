@@ -25,9 +25,9 @@ public class Snack6 {
 		int[] arr2 = { 42, 56, 7, 42, 62, 90, 86, 54, 45, 32 };
 		
 		int maxNumberArr1 = 0;
-		int minNumberArr1 = 50;
+		int minNumberArr1 = Integer.MAX_VALUE;
 		int maxNumberArr2 = 0;
-		int minNumberArr2 = 50;
+		int minNumberArr2 = Integer.MAX_VALUE;
 		int total = 0;
 		int avgNumber = 0;
 		
