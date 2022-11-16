@@ -24,9 +24,9 @@ public class Snack6 {
 		int[] arr1 = { 70, 39, 18, 30, 51, 59, 1, 47, 67, 87 };
 		int[] arr2 = { 42, 56, 7, 42, 62, 90, 86, 54, 45, 32 };
 		
-		int maxNumberArr1 = 0;
+		int maxNumberArr1 = Integer.MIN_VALUE;
 		int minNumberArr1 = Integer.MAX_VALUE;
-		int maxNumberArr2 = 0;
+		int maxNumberArr2 = Integer.MIN_VALUE;
 		int minNumberArr2 = Integer.MAX_VALUE;
 		int total = 0;
 		int avgNumber = 0;
@@ -65,7 +65,7 @@ public class Snack6 {
 			
 			}
 		}
-		avgNumber = total / arraySum.length;
+		avgNumber = total / (arr1.length + arr2.length);
 		
 		
 		System.out.println("total number of both the array is " + total);

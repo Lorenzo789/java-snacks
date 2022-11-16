@@ -29,8 +29,9 @@ public class Snack8 {
 	public static void main(String[] args) {
 		
 		Random rnd = new Random(128);
-		int biggestValue = 0;
+		int biggestValue = Integer.MIN_VALUE;
 		int smallestValue = Integer.MAX_VALUE;
+		int sum = 0;
 		
 		int[] randomArray = new int[10];
 
@@ -50,8 +51,16 @@ public class Snack8 {
 				
 			}
 			
+			if (randomArray[x] % 5 == 0) {
+				
+				sum += randomArray[x];
+				
+			}
+			
+			
 			
 		}
+		System.out.println("the sum is: " + sum);
 		System.out.println("the biggest value is: " + biggestValue);
 		System.out.println("the smallest value is: " + smallestValue);
 	}
