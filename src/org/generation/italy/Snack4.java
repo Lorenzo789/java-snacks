@@ -21,8 +21,6 @@ public class Snack4 {
 		
 		Random rnd = new Random();
 		
-		int y = 0;
-		
 		int difference = secondArray.length - firstArray.length;
 		
 		for (int x = 0; x < difference; x++) {
