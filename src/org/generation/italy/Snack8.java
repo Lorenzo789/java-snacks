@@ -29,6 +29,7 @@ public class Snack8 {
 	public static void main(String[] args) {
 		
 		Random rnd = new Random(128);
+		int biggestValueAbs = Integer.MIN_VALUE;
 		int biggestValue = Integer.MIN_VALUE;
 		int smallestValue = Integer.MAX_VALUE;
 		int sum = 0;
@@ -39,15 +40,17 @@ public class Snack8 {
 			
 			randomArray[x] = rnd.nextInt(-50, 50);
 			
-			int numbers = Math.abs(randomArray[x]);
+			int absNumbers = Math.abs(randomArray[x]);
+			int numbers = randomArray[x];
 			
-			if (numbers > biggestValue) {
+			if (absNumbers > biggestValueAbs) {
 				
+				biggestValueAbs = absNumbers;
 				biggestValue = numbers;
 				
-			} else if (numbers < smallestValue) {
+			} else if (absNumbers < smallestValue) {
 				
-				smallestValue = numbers;
+				smallestValue = absNumbers;
 				
 			}
 			
